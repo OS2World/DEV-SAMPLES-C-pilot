@@ -1,0 +1,12 @@
+R: Calculate average of given numbers
+
+*REPEAT
+T: Give a number, 0 quits:
+A: #num
+C: #sum = #sum + #num
+C: #n = #n + 1
+J(#num <> 0): *REPEAT
+
+C: #n = #n - 1
+C: #avg = #sum / #n
+T: Average is #avg
